@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0b027c5909.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+    <title>Drag&DropIt</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Drag n Drop em</h1>
+        <section class="draggable-Elements">
+          <i class="fas fa-fish draggable"  draggable="true"    style="color:aqua" id="fish"></i>
+          <i class="fas fa-cat  draggable"  draggable="true"    style="color:orange" id="cat"></i>
+          <i class="fas fa-dog  draggable"  draggable="true"    style="color:brown" id="dog"></i>
+          <i class="fas fa-frog draggable"  draggable="true"    style="color:green" id="frog"></i>
+          <i class="fas fa-bugs draggable"  draggable="true"    style="color:yellow" id="bugs"></i>
+      </section>
+     <section class="droppable-Elements">
+        <div class="droppable" data-draggable-id="fish"><span>fish</span></div>
+        <div class="droppable" data-draggable-id="cat"><span>cat</span></div>
+        <div class="droppable" data-draggable-id="dog"><span>dog</span></div>
+        <div class="droppable" data-draggable-id="frog"><span>frog</span></div>
+        <div class="droppable" data-draggable-id="bugs"><span>bugs</span></div>
+     </section>
+
+     <button>next</button>
+    </div>
+</body>
+</html>
